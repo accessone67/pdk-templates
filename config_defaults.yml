@@ -594,10 +594,6 @@ Gemfile:
         version: '= 2.0.1'
       - gem: 'rb-readline'
         version: '= 0.5.5'
-        platforms:
-          - mswin
-          - mingw
-          - x64_mingw
     ':system_tests':
       - gem: 'puppet_litmus'
         version: '< 1.0.0'
@@ -658,4 +654,8 @@ spec/spec_helper.rb:
   unmanaged: true
   checks: 'validate lint check rubocop'
 .github/workflows/release.yml:
+  unmanaged: true
+.devcontainer/devcontainer.json:
+  unmanaged: true
+.devcontainer/Dockerfile:
   unmanaged: true
